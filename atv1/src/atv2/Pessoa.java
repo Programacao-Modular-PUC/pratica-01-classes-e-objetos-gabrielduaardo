@@ -57,17 +57,17 @@ N˜ao se esque¸ca de encapsular os dados e criar os m´etodos get, set para cad
 	public void InformaObesidade(double imc) {
 		this.imc = imc;
 		 if (imc < 18.5) {
-				System.out.println("Abaixo do peso");
+				System.out.printf("Abaixo do peso IMC %.2f",  imc);
 			} else if (imc < 24.9) {
-				System.out.println("Peso normal");
+				System.out.printf("Peso normal %.2f", imc);
 			} else if (imc < 29.9 ) {
-				System.out.println("Sobrepeso");
+				System.out.printf("Sobrepeso %.2f", imc);
 			} else if (imc < 34.9 ) {
-				System.out.println("Obesidade grau 1");
+				System.out.printf("Obesidade grau 1 %.2f", imc);
 			}else if (imc < 39.9 ) {
-				System.out.println("Obesidade grau 2");
+				System.out.printf("Obesidade grau 2 %.2f", imc);
 			} else if (imc > 40 ) {
-				System.out.println("Obesidade grau 3");
+				System.out.printf("Obesidade grau 3 %.2f", imc);
 			}
 		}	
 }
